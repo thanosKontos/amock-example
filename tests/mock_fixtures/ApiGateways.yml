@@ -1,0 +1,9 @@
+AmockExample\Library\SomeApiGateway:
+  mockSuccessResponse:
+    disableConstructor: true
+    mockMethods:
+      getHelloReponse: '{"hello":"world"}'
+  mock404Response:
+    disableConstructor: true
+    mockMethods:
+      getHelloReponse: '{"error": "404","message":"Not found"}'

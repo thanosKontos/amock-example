@@ -1,0 +1,26 @@
+{
+    "name": "thanosKontos/amock-example",
+    "type": "library",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/thanosKontos/amock"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "phpunit/phpunit": "^6.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "thanosKontos/amock": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "AmockExample\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AmockExample\\": "tests/"
+        }
+    }
+}
