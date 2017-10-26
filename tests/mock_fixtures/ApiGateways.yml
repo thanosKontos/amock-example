@@ -2,8 +2,12 @@ AmockExample\Library\SomeApiGateway:
   mockSuccessResponse:
     disableConstructor: true
     mockMethods:
-      getHelloReponse: '{"hello":"world"}'
+      getHelloReponse: '@value:{"hello":"world"}'
   mock404Response:
     disableConstructor: true
     mockMethods:
-      getHelloReponse: '{"error": "404","message":"Not found"}'
+      getHelloReponse: '@value:{"error": "404","message":"Not found"}'
+  mockExceptionResponse:
+    disableConstructor: true
+    mockMethods:
+      getHelloReponse: '@exception:\AmockExample\Library\Exception\ApiException'

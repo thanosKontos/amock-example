@@ -13,12 +13,12 @@ class MyCoolService
 
     public function doSomethingCool()
     {
-        $response = json_decode($this->gateway->getHelloReponse());
-
         try {
+            $response = json_decode($this->gateway->getHelloReponse());
+
             return strtoupper($response->hello);
         } catch (\Throwable $t) {
-            throw new \Exception('Some error occurred');
+            throw new Exception\ApiException('Some error occurred');
         }
     }
 }

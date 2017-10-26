@@ -20,6 +20,6 @@ class AmockExampleTestCase extends TestCase
             __DIR__ . '/mock_fixtures'
         );
 
-        $this->amock = Amock::create($config);
+        $this->amock = Amock::create($config, $this);
     }
 }
